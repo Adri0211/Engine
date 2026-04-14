@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/dev/glfw-3.4/tests/CMakeLists.txt
+  timeout.c
+  timeout.vcxproj -> C:\dev\glfw-3.4\build\tests\Debug\timeout.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
