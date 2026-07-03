@@ -1,6 +1,6 @@
-^C:\USERS\ADRI\DESKTOP\ENGINE\CMAKELISTS.TXT
+^C:\USERS\ADRI_02\REPOS\ENGINE\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Adri/Desktop/Engine -BC:/Users/Adri/Desktop/Engine/build --check-stamp-file C:/Users/Adri/Desktop/Engine/build/CMakeFiles/generate.stamp
+C:\msys64\ucrt64\bin\cmake.exe -SC:/Users/Adri_02/Repos/Engine -BC:/Users/Adri_02/Repos/Engine/build --check-stamp-file C:/Users/Adri_02/Repos/Engine/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

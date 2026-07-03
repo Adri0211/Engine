@@ -14,8 +14,12 @@ set(GLAD_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/libs/glad/include")
 add_executable(Engine 
 	src/main.cpp
 	"${CMAKE_SOURCE_DIR}/libs/glad/src/glad.c"
+	src/EBO.cpp
+	src/VAO.cpp
+	src/VBO.cpp
+	src/Shader.cpp
 )
-target_include_directories(Engine PRIVATE "${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}")
+target_include_directories(Engine PRIVATE "${CMAKE_SOURCE_DIR}/include" "${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}")
 target_link_libraries(Engine PRIVATE
 	"${GLFW_LIBRARY}"
 	opengl32

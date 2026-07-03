@@ -1,2 +1,6 @@
-C:\Users\Adri\Desktop\Engine\src\main.cpp;C:\Users\Adri\Desktop\Engine\build\Engine.dir\Debug\main.obj
-C:\Users\Adri\Desktop\Engine\libs\glad\src\glad.c;C:\Users\Adri\Desktop\Engine\build\Engine.dir\Debug\glad.obj
+C:\Users\Adri_02\Repos\Engine\src\main.cpp;C:\Users\Adri_02\Repos\Engine\build\Engine.dir\Debug\main.obj
+C:\Users\Adri_02\Repos\Engine\libs\glad\src\glad.c;C:\Users\Adri_02\Repos\Engine\build\Engine.dir\Debug\glad.obj
+C:\Users\Adri_02\Repos\Engine\src\EBO.cpp;C:\Users\Adri_02\Repos\Engine\build\Engine.dir\Debug\EBO.obj
+C:\Users\Adri_02\Repos\Engine\src\VAO.cpp;C:\Users\Adri_02\Repos\Engine\build\Engine.dir\Debug\VAO.obj
+C:\Users\Adri_02\Repos\Engine\src\VBO.cpp;C:\Users\Adri_02\Repos\Engine\build\Engine.dir\Debug\VBO.obj
+C:\Users\Adri_02\Repos\Engine\src\Shader.cpp;C:\Users\Adri_02\Repos\Engine\build\Engine.dir\Debug\Shader.obj

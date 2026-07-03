@@ -1,19 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Adri\Desktop\Engine\src\main.cpp">
+    <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Adri\Desktop\Engine\libs\glad\src\glad.c">
+    <ClCompile Include="C:\Users\Adri_02\Repos\Engine\libs\glad\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\EBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\VAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\VBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Adri\Desktop\Engine\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Adri_02\Repos\Engine\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{BF2C513B-EBEB-3EDD-BDDC-D7387CC8E84E}</UniqueIdentifier>
+      <UniqueIdentifier>{9DC81290-5822-3016-AEA5-134303A48DA0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
