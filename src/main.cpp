@@ -4,9 +4,11 @@
 #include <stdio.h>
 
 #include <shader.h>
+#include <Texture.h>
 #include <VBO.h>
 #include <VAO.h>
 #include <EBO.h>
+#include <Texture.h>
 
 float vertices[] = { // Coords (3 floats), Vertex Color (3 floats), UV Texture Coords (2 floats)
      0.5f,  0.5f, 0.0f,     1.0f, 0.0f, 0.0f,       1.0f, 1.0f, // top right
@@ -78,63 +80,9 @@ int main()
     VBO.Unbind();
     EBO.Unbind();
 
-    // Texture data
-    int width, height, nrChannels;
-    stbi_set_flip_vertically_on_load(true); // Flip the texture on load to match OpenGL's coordinate system
-    unsigned char *data = stbi_load("../../assets/textures/Test_Texture.png", &width, &height, &nrChannels, 0);
-
-    if (!data)
-    {
-        defaultShader.Delete();
-        glfwDestroyWindow(window);
-        glfwTerminate();
-        return -1;
-    }
-
-    GLenum format = GL_RGB;
-    if (nrChannels == 1)
-    {
-        format = GL_RED;
-    }
-    else if (nrChannels == 3)
-    {
-        format = GL_RGB;
-    }
-    else if (nrChannels == 4)
-    {
-        format = GL_RGBA;
-    }
-    else
-    {
-        stbi_image_free(data);
-        defaultShader.Delete();
-        glfwDestroyWindow(window);
-        glfwTerminate();
-        return -1;
-    }
-
-    GLuint texture;
-    glGenTextures(1, &texture);
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-
-    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
-    glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
-    glGenerateMipmap(GL_TEXTURE_2D);
-
-    stbi_image_free(data);
-
-    glBindTexture(GL_TEXTURE_2D, 0);
-
-    GLuint tex0uni = glGetUniformLocation(defaultShader.ID, "tex0");
-    defaultShader.Activate();
-    glUniform1i(tex0uni, 0);
+    // Load and bind our texture
+    Texture texture("../../assets/textures/Test_Texture.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
+    texture.texUnit(defaultShader, "tex0", 0);
 
     while(!glfwWindowShouldClose(window))
     {
@@ -146,7 +94,7 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         defaultShader.Activate();
-        glBindTexture(GL_TEXTURE_2D, texture);
+        texture.Bind();
 
         VAO.Bind();
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -160,7 +108,7 @@ int main()
     VAO.Delete();
     VBO.Delete();
     EBO.Delete();
-    glDeleteTextures(1, &texture);
+    texture.Delete();
     defaultShader.Delete();
 
     glfwDestroyWindow(window);

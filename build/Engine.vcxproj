@@ -370,6 +370,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\VAO.cpp" />
     <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\VBO.cpp" />
     <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\Shader.cpp" />
+    <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\Texture.cpp" />
     <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\stb.cpp" />
   </ItemGroup>
   <ItemGroup />

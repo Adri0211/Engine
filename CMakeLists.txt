@@ -20,6 +20,7 @@ add_executable(Engine
 	src/VAO.cpp
 	src/VBO.cpp
 	src/Shader.cpp
+	src/Texture.cpp
 	src/stb.cpp
 )
 target_include_directories(Engine PRIVATE "${CMAKE_SOURCE_DIR}/include" "${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}" "${STB_INCLUDE_DIR}")
