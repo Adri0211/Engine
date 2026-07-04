@@ -1,0 +1,14 @@
+startup: begin
+startup: before glfwInit
+startup: after glfwInit
+startup: before glfwCreateWindow
+startup: after glfwCreateWindow
+startup: before gladLoadGLLoader
+startup: after gladLoadGLLoader
+startup: before shader load
+startup: after shader load
+startup: before stbi_load
+startup: after stbi_load
+startup: texture size 4096 x 4096, channels 3
+startup: texture upload complete
+startup: shutdown

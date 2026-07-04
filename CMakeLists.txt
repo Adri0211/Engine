@@ -9,7 +9,9 @@ set(GLFW_ROOT "${CMAKE_SOURCE_DIR}/libs/glfw-3.4")
 set(GLFW_INCLUDE_DIR "${GLFW_ROOT}/include")
 set(GLFW_LIBRARY "${GLFW_ROOT}/build/src/Debug/glfw3.lib")
 
-set(GLAD_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/libs/glad/include")
+set(GLAD_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/libs/glad/include") 
+
+set(STB_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/libs")
 
 add_executable(Engine 
 	src/main.cpp
@@ -18,8 +20,9 @@ add_executable(Engine
 	src/VAO.cpp
 	src/VBO.cpp
 	src/Shader.cpp
+	src/stb.cpp
 )
-target_include_directories(Engine PRIVATE "${CMAKE_SOURCE_DIR}/include" "${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}")
+target_include_directories(Engine PRIVATE "${CMAKE_SOURCE_DIR}/include" "${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}" "${STB_INCLUDE_DIR}")
 target_link_libraries(Engine PRIVATE
 	"${GLFW_LIBRARY}"
 	opengl32

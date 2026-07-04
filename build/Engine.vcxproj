@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -111,10 +111,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -141,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -167,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -197,7 +197,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -223,10 +223,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -253,7 +253,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -278,10 +278,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Adri_02\Repos\Engine\include;C:\Users\Adri_02\Repos\Engine\libs\glfw-3.4\include;C:\Users\Adri_02\Repos\Engine\libs\glad\include;C:\Users\Adri_02\Repos\Engine\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -370,6 +370,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\VAO.cpp" />
     <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\VBO.cpp" />
     <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\Shader.cpp" />
+    <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\stb.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

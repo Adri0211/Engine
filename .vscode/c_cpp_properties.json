@@ -11,7 +11,8 @@
                 "${workspaceFolder}",
                 "${workspaceFolder}/libs/glfw-3.4/include",
                 "${workspaceFolder}/libs/glad/include",
-                "${workspaceFolder}/include"
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/libs"
             ],
             "defines": []
         }
