@@ -41,4 +41,21 @@ void Camera::Inputs(GLFWwindow* window)
     {
         Position += speed * -Up;
     }
+
+    double mouseX, mouseY;
+    glfwGetCursorPos(window, &mouseX, &mouseY);
+
+    float rotX = sensitivity * (float)(mouseY - (height / 2)) / height;
+    float rotY = sensitivity * (float)(mouseX - (width / 2)) / width;
+
+    glm::vec3 newOrientation = glm::rotate(Orientation, glm::radians(-rotX), glm::normalize(glm::cross(Orientation, Up)));
+
+    if(!(glm::angle(newOrientation, Up) <= glm::radians(5.0f) || glm::angle(newOrientation, -Up) <= glm::radians(5.0f)))
+    {
+        Orientation = newOrientation;
+    }
+
+    Orientation = glm::rotate(Orientation, glm::radians(-rotY), Up);
+
+    glfwSetCursorPos(window, (width / 2), (height / 2));
 }
