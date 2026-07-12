@@ -13,6 +13,7 @@
 #include <VAO.h>
 #include <EBO.h>
 #include <Texture.h>
+#include <Camera.h>
 
 const unsigned int width = 800;
 const unsigned int height = 800;
@@ -37,6 +38,9 @@ unsigned int indices[] = {
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
+
+    width = width;
+    height = height;
 }
 
 void processInput(GLFWwindow *window)
@@ -101,6 +105,8 @@ int main()
 
     glEnable(GL_DEPTH_TEST); // Enable depth testing for 3D rendering
 
+    Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
+
     // Render loop
     while(!glfwWindowShouldClose(window))
     {
@@ -113,23 +119,8 @@ int main()
 
         defaultShader.Activate();
 
-        // Transform matrices
-        glm::mat4 model = glm::mat4(1.0);
-        glm::mat4 view = glm::mat4(1.0);
-        glm::mat4 proj = glm::mat4(1.0);
-
-        model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-        view = glm::translate(view, glm::vec3(0.0f, -0.5f, -2.0f));
-        proj = glm::perspective(glm::radians(45.0f), (float)(width/height), 0.1f, 100.0f);
-
-        int modelLoc = glGetUniformLocation(defaultShader.ID, "model");
-        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-
-        int viewLoc = glGetUniformLocation(defaultShader.ID, "view");
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-
-        int projLoc = glGetUniformLocation(defaultShader.ID, "proj");
-        glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(proj));
+        camera.Inputs(window);
+        camera.Matrix(45.0f, 0.1f, 100.0f, defaultShader, "camMatrix");
 
         texture.Bind();
 

@@ -13,6 +13,8 @@ set(GLAD_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/libs/glad/include")
 
 set(STB_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/libs")
 
+set(GLM_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/libs/glm")
+
 add_executable(Engine 
 	src/main.cpp
 	"${CMAKE_SOURCE_DIR}/libs/glad/src/glad.c"
@@ -22,8 +24,9 @@ add_executable(Engine
 	src/Shader.cpp
 	src/Texture.cpp
 	src/stb.cpp
+	src/Camera.cpp
 )
-target_include_directories(Engine PRIVATE "${CMAKE_SOURCE_DIR}/include" "${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}" "${STB_INCLUDE_DIR}")
+target_include_directories(Engine PRIVATE "${CMAKE_SOURCE_DIR}/include" "${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}" "${STB_INCLUDE_DIR}" "${GLM_INCLUDE_DIR}")
 target_link_libraries(Engine PRIVATE
 	"${GLFW_LIBRARY}"
 	opengl32

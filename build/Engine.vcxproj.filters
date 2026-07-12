@@ -25,6 +25,9 @@
     <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\stb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Adri_02\Repos\Engine\src\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Adri_02\Repos\Engine\CMakeLists.txt" />
