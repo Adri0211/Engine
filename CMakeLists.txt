@@ -31,3 +31,7 @@ target_link_libraries(Engine PRIVATE
 	user32
 	shell32
 )
+
+target_compile_definitions(Engine PRIVATE
+    ASSETS_PATH="${CMAKE_SOURCE_DIR}/assets/"
+)
